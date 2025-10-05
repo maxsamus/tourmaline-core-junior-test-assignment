@@ -19,4 +19,5 @@ target_link_libraries(test_change_calculator gtest gtest_main)
 
 enable_testing()
 
-add_test(NAME RunAllTests COMMAND test_change_calculator)
+include(GoogleTest)
+gtest_discover_tests(test_change_calculator)
