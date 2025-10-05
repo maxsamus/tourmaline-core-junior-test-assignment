@@ -16,3 +16,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 target_link_libraries(test_change_calculator gtest gtest_main)
+
+enable_testing()
+
+add_test(NAME RunAllTests COMMAND test_change_calculator)
