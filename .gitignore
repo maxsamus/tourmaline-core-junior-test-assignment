@@ -42,3 +42,13 @@
 
 # unnecessary PDF
 README.pdf
+
+# Build directories
+build/
+
+# IDE/editor settings
+.vscode/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
