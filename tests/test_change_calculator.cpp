@@ -92,6 +92,19 @@ TEST(ChangeCalculatorTests, CanMakeChange7)
     EXPECT_EQ(result, std::vector<int>({44, 44, 27, 1}));
 }
 
+TEST(ChangeCalculatorTests, CanMakeChange7)
+{
+    std::vector<int> result;
+
+    std::vector<int> values = {10, 5, 2};
+    std::vector<int> counts = {1, 1, 3};
+    int target = 16;
+
+    bool success = make_change(values, counts, target, result);
+    EXPECT_TRUE(success);
+    EXPECT_EQ(result, std::vector<int>({10, 2, 2, 2}));
+}
+
 TEST(ChangeCalculatorTests, CannotMakeChange)
 {
     std::vector<int> result;
