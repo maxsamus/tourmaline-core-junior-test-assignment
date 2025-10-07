@@ -92,7 +92,7 @@ TEST(ChangeCalculatorTests, CanMakeChange7)
     EXPECT_EQ(result, std::vector<int>({44, 44, 27, 1}));
 }
 
-TEST(ChangeCalculatorTests, CanMakeChange7)
+TEST(ChangeCalculatorTests, CanMakeChange8)
 {
     std::vector<int> result;
 
